@@ -32,6 +32,7 @@ export default{
   <SocialLinks />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "./styles/general.scss" as *;
 
 </style>
