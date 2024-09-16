@@ -22,7 +22,7 @@ main{
     
     p{
         color: white;
-        padding: 30px 0;
+        padding: 50px 0;
         font-size: 20px;
         font-weight: bold;
     }

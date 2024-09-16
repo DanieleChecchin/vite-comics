@@ -70,7 +70,8 @@ export default{
                 <li v-for="rightLink in rightLinks">{{ rightLink }}</li>
             </ul>
             </div>
-            </div>
+            <img src="../assets/img/dc-logo-bg.png" alt="Logo DC">
+        </div>
     </footer>
 </template>
 
@@ -94,6 +95,10 @@ footer{
         ul{
         color: #646E66;
         padding-right: 20px;
+        }
+
+        img{
+            width: 350px;
         }
 }
     
