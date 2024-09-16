@@ -2,7 +2,43 @@
 export default{
     data(){
         return{
-            
+            leftLinksUp:[
+                'Characters',
+                'Comics',
+                'Movies',
+                'TV',
+                'Games',
+                'Videos',
+                'News'
+            ],
+
+            leftLinksDown:[
+                'Shop DC',
+                'Shop DC Collectibles'
+            ],
+
+            centerLinks:[
+                'Terms Of Use',
+                'Privacy policy (New)',
+                'Ad Choices',
+                'Advertising',
+                'Job',
+                'Subscriptions',
+                'Talent Workshops',
+                'CPSC Certificates',
+                'Ratings',
+                'Shop Help',
+                'Contact Us'
+            ],
+
+            rightLinks:[
+                'DC',
+                'MAD Magazine',
+                'DC Kids',
+                'DC Universe',
+                'DC Power Visa'
+            ]
+
         }
     }
 }
@@ -14,44 +50,24 @@ export default{
             <div class="left-footer">
             <h5>DC COMICS</h5>
             <ul>
-                <li>Characters</li>
-                <li>Comics</li>
-                <li>Movies</li>
-                <li>TV</li>
-                <li>Games</li>
-                <li>Videos</li>
-                <li>News</li>
+                <li v-for="leftLink in leftLinksUp"> {{ leftLink }} </li>
             </ul>
             <h5>SHOP</h5>
             <ul>
-                <li>Shop DC</li>
-                <li>Shop DC Collectibles</li>
+                <li v-for="leftLink in leftLinksDown">{{ leftLink }}</li>
+                
             </ul>
             </div>
             <div class="center-footer">
             <h5>DC</h5>
             <ul>
-                <li>Terms Of Use</li>
-                <li>Privacy policy (New)</li>
-                <li>Ad Choices</li>
-                <li>Advertising</li>
-                <li>Job</li>
-                <li>Subscriptions</li>
-                <li>Talent Workshops</li>
-                <li>CPSC Certificates</li>
-                <li>Ratings</li>
-                <li>Shop Help</li>
-                <li>Contact Us</li>
+                <li v-for="centerLink in centerLinks">{{ centerLink }}</li>  
             </ul>
             </div>
             <div class="right-footer">
             <h5>SITES</h5>
             <ul>
-                <li>DC</li>
-                <li>MAD Magazine</li>
-                <li>DC Kids</li>
-                <li>DC Universe</li>
-                <li>DC Power Visa</li>
+                <li v-for="rightLink in rightLinks">{{ rightLink }}</li>
             </ul>
             </div>
             </div>
