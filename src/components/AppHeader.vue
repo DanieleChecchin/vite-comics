@@ -2,7 +2,18 @@
 export default{
     data(){
         return{
-
+            navLinks:[
+                'CHARACTERS',
+                'COMICS',
+                'MOVIES',
+                'TV',
+                'GAMES',
+                'COLLECTIBLES',
+                'VIDEOS',
+                'FANS',
+                'NEWS',
+                'SHOP'
+            ]
         }
     }
 }
@@ -14,16 +25,7 @@ export default{
         <img src="../assets/img/dc-logo.png" alt="Logo dc comics">
         <nav>
             <ul class="links">
-                <li>CHARACTERS</li>
-                <li class="active">COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <li v-for="navItem in navLinks"> {{ navItem }} </li>
             </ul>
         </nav>
     </header>
