@@ -90,9 +90,15 @@ export default {
 </script>
 
 <template>
-    <ComicListCard />
+
+    <ComicListCard v-for="(comicElement, index) in comicList"  :key="index"
+    :comicImage="comicElement.thumb"
+    :comicPrice="comicElement.price"
+    :comicName="comicElement.series"
+    :comicType="comicElement.type"/>
+
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
     
 </style>

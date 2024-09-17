@@ -3,7 +3,7 @@
 export default {
     data() {
         return {
-            
+
         }
     }
     
@@ -14,6 +14,6 @@ export default {
     
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
     
 </style>
