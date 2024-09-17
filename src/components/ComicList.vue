@@ -1,5 +1,7 @@
 <script>
 
+import ComicListCard from './ComicListCard.vue';
+
 export default {
     data(){
         return {
@@ -79,13 +81,16 @@ export default {
             ]
 
         }
+    },
+    components:{
+        ComicListCard
     }
     
 }
 </script>
 
 <template>
-    
+    <ComicListCard />
 </template>
 
 <style lang="scss">
