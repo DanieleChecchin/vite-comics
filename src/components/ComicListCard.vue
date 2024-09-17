@@ -31,21 +31,27 @@ export default {
 <template>
     <section class="card-item">
         <img :src="comicImage" :alt="comicName">
-        <h4>{{ comicName }}</h4>
+        <h5>{{ comicName }}</h5>
     </section>
-    
+
 </template>
 
 <style scoped lang="scss">
 
-section{
-    width: calc((100% / 6) - 50px / 6);
+.card-item{
+    width: calc(100% / 6);
+    text-align: center;
+    height: 200px;
 
-    h4{
+    img{
+        height: 100%;
+    }
+
+    h5{
+        margin-top: 15px;
     color: white;
     }
 }
-
 
     
 </style>

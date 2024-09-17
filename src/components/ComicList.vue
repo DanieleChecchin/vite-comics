@@ -94,7 +94,7 @@ export default {
         <ComicListCard v-for="(comicElement, index) in comicList"  :key="index"
         :comicImage="comicElement.thumb"
         :comicPrice="comicElement.price"
-        :comicName="comicElement.series"
+        :comicName="comicElement.series.toUpperCase()"
         :comicType="comicElement.type"/>
     </section>    
 </template>
@@ -102,10 +102,11 @@ export default {
 <style scoped lang="scss">
 .card-list{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    height: 620px;
+    padding-bottom: 40px;
+
 }
     
 </style>

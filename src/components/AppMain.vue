@@ -23,7 +23,7 @@ export default{
 <style scoped lang="scss">
 
 main{
-    background-color: black;
+    background-color: #1C1C1C;
 }
     
 </style>
