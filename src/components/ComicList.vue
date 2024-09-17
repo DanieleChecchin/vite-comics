@@ -96,7 +96,11 @@ export default {
         :comicPrice="comicElement.price"
         :comicName="comicElement.series.toUpperCase()"
         :comicType="comicElement.type"/>
-    </section>    
+    </section>
+    <div class="button">
+        <button>LOAD MORE</button>
+    </div>
+        
 </template>
 
 <style scoped lang="scss">
@@ -106,7 +110,22 @@ export default {
     flex-wrap: wrap;
     height: 620px;
     padding-bottom: 40px;
-
 }
+
+.button{
+    text-align: center;
+
+    button{
+    text-align: center;
+    background-color: #0282F9;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    padding: 10px 50px;
+    margin-bottom: 10px
+}
+}
+
+
     
 </style>
