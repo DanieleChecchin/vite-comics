@@ -1,16 +1,22 @@
 <script>
+
+import ComicList from './ComicList.vue';
+
 export default{
     data(){
         return{
             
         }
+    },
+    components:{
+        ComicList
     }
 }
 </script>
 
 <template>
     <main>
-        <p class="container">--> Content goes here <--</p>
+        <ComicList/>
     </main>
 </template>
 
@@ -18,13 +24,6 @@ export default{
 
 main{
     background-color: black;
-    
-    p{
-        color: white;
-        padding: 50px 0;
-        font-size: 20px;
-        font-weight: bold;
-    }
 }
     
 </style>
