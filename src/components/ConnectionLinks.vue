@@ -21,7 +21,6 @@ export default{
 </template>
 
 <style scoped lang="scss">
-@use "../styles/general.scss" as *;
 
 section{
     background-color: #0282F9;
