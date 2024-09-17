@@ -29,9 +29,23 @@ export default {
 </script>
 
 <template>
+    <section class="card-item">
+        <img :src="comicImage" :alt="comicName">
+        <h4>{{ comicName }}</h4>
+    </section>
     
 </template>
 
 <style scoped lang="scss">
+
+section{
+    width: calc((100% / 6) - 50px / 6);
+
+    h4{
+    color: white;
+    }
+}
+
+
     
 </style>

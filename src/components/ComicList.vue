@@ -90,15 +90,22 @@ export default {
 </script>
 
 <template>
-
-    <ComicListCard v-for="(comicElement, index) in comicList"  :key="index"
-    :comicImage="comicElement.thumb"
-    :comicPrice="comicElement.price"
-    :comicName="comicElement.series"
-    :comicType="comicElement.type"/>
-
+    <section class="card-list container">
+        <ComicListCard v-for="(comicElement, index) in comicList"  :key="index"
+        :comicImage="comicElement.thumb"
+        :comicPrice="comicElement.price"
+        :comicName="comicElement.series"
+        :comicType="comicElement.type"/>
+    </section>    
 </template>
 
 <style scoped lang="scss">
+.card-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
     
 </style>
